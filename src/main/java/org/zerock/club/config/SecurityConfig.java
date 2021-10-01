@@ -18,7 +18,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    @Override
+    /*@Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
         //사용자 계정은 user1
@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .password("$2a$10$Yyy76hlkUG5SErw9PacolebmdH22ezxheFiJDEBbqkeYDUnOvy9NO")
                 .roles("USER");
 
-    }
+    }*/
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
