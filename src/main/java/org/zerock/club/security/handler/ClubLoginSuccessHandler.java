@@ -1,4 +1,4 @@
-package org.zerock.club.handler;
+package org.zerock.club.security.handler;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.security.core.Authentication;
@@ -6,9 +6,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
-import org.zerock.club.dto.ClubAuthMemberDTO;
+import org.zerock.club.security.dto.ClubAuthMemberDTO;
 
-import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

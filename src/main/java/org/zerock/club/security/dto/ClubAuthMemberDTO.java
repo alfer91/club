@@ -1,4 +1,4 @@
-package org.zerock.club.dto;
+package org.zerock.club.security.dto;
 
 import lombok.Getter;
 import lombok.Setter;
