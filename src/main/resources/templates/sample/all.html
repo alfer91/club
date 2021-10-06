@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>For All</h1>
+
+    <button class="btn" type="button">test jwt</button>
+
+    <script>
+        $(".btn").click(function () {
+
+            var jwtValue = 'eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzM1MDk4NDYsImV4cCI6MTYzNjEwMTg0Niwic3ViIjoidXNlcjkwQHplcm9jay5vcmcifQ.eMH_Uvr00FDrbZb7z1LbBNqHjVI5AH5v8aIYGRL-Sco';
+
+            $.ajax({
+                beforeSend: function (request) {
+                    request.setRequestHeader("Authorization", 'Bearer ' + jwtValue);
+                },
+                dataType: "json",
+                url: 'http://localhost:8080/notes/2',
+                data: {email: 'user90@zerock.org'},
+                success: function (arr) {
+                    console.log(arr);
+                }
+            })
+        })
+    </script>
 </body>
 </html>
