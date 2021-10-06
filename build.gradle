@@ -35,7 +35,7 @@ dependencies {
     implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-java8time'
     implementation group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-oauth2-client'
-
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 }
 
 test {
